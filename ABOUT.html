@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="style1.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href='website.html'>TANUKU CITY</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='vinayp.html'>HOME</a></li>
+                    <li><a href='ABOUT.html'>ABOUT</a></li>
+                    <li><a href='hospitals.html'>HOSPITALS</a></li>
+                    <li><a href='restaraunts.html'>RESTARAUNTS</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">LOGIN</button></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <h1 style="font-size: 40px">ABOUT TANUKU</h1>
+            <P>
+                Right from the ancient times Tanuku has got its own importance and significance in every aspect. Tanuku has its special identification as it is the political origin for the West Godavari District. Tanuku is a feather one's cap as it occupied an eminient position on the world map as a producer and supplier of the Rocket Fuel UDMH-MMD.
+
+                The historical River "GOSTHANI" is flowing on the three parts of the town and given an impression to viewers as a peninsula. And it has a spiritual power that anyone who have a bath from this River their sins will be floated away. The surrounding villages have a great historical significance as they stand for a fabulous historical monuments.
+                </P>
+                <img src="tanuku.jpg" width ="500px" height= "300px">
+                <p>
+                Today Tanuku town has its own recognition throughout the world. It has a historical evidence behind the origin of its Tanuku . According to the records of the history its was the capital of the king of gaint TARAKASURA's kingdom TARAKAPURI. The name of the familiar by their own names. This evidence strengthens the historical records. The following historical evidences proves ther records of the various villages that are surrounded Tanuku . In those days the present PALANGI is known as PULANGI(Stall of Flowers) and the CHIVATAM is known as SRIVATAM (The Financial Centre). In those days the paddy go down of TARAKAPURI was today's VADLURU those days SWARNAGARAM( Place of gold) today's PAIDIPARRU. Those days Ratnala Angi (Stall of Crystals) todays RELANGI. After the wedding of Lord PARAMESWARA with PARVATI, they hava born a son KUMARA SWAMY and the happend to be the son-in-law of Devendra. In that time the Tarakasura was negletted by Devendra as a result
+                <BR>
+                    </p>
+                    <img src="tanuku2.jpg" width ="500px" height= "300px">
+                    <p>
+                Tarakasura greq anger and derocioulsy invaded over devendra. Then Kumara Swamy decended to earth to rescue his father-in-law. The place where kumara Swamy landed is today known as Komaravaram. The place where Indra resided is now called Illindra Parru. The place where all the Angels are stayed is now known as Velpuru ( Place of Angels). The place where Veerabhadrapuram. the place where Uraga Raju resided is known as Undrajavaram. The place where Goddess Vijayalakshmi resided is known as Mahalashmi Cheruvu. The residents of the three words the holy priests are resided a place which is today called as "Vipparru". These are the different evidences that proves that Tanuku has historical significance.
+                <br>
+                </p>
+                <img src="tanuku6.jpeg" width ="500px" height= "300px">
+                <p>
+                Tanuku is the birth place of the greatest poet in Telugu and the first poet in Telugu language ADIKAVI Nannayya. He conducted an Yagna under "JAMMI" tree and translated Mahabaratha from Sanskrit to Telugu.
+                <br>
+                
+                In the modern world the technology has been developing but Tanuku is no where least in the world as it successes in a remarkable achievement of manufacturing of ROCKET FUEL UDMH-MMD. The remarkable achievement of Andhra Sugars of manufacturing Rocket Fuel has been given a ground on the world map for India as the fifth country in the world.
+
+            </P>
+        </section>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

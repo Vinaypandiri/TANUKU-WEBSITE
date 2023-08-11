@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="style1.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href='website.html'>TANUKU CITY</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='vinayp.html'>HOME</a></li>
+                    <li><a href='ABOUT.html'>ABOUT</a></li>
+                    <li><a href='hospitals.html'>HOSPITALS</a></li>
+                    <li><a href='restaraunts.html'>RESTARAUNTS</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <h1 style="font-size: 40px">ABOUT HOSPITALS</h1>
+            
+        </section>
+        <div class="banner">
+            
+            <div class="hospital">
+                <h2 style="color: white;">Apple Hospital</h2>
+                <img src="apple-hospital.jpg" alt="">
+                <p style="background-color:white;color:black ;"> 
+                    <b>Address:</b>
+                    No 21-4-22,Tanukuvari Street , Tanuku Ho <br>Near Railway station,<br>Tanuku - 534211 <br>
+                    Andhra pradesh
+                </p>
+            </div>
+            <div class="hospital">
+                <h2>Government area hospital</h2>
+                <img src="government.jpg" alt="">
+                <p>
+                <b>Address :</b>
+                Dental Assistant surgeon Government area hospital Rashtrapathi Road Godavari dist,<br>Tanuku-534211,Andhra pradesh
+                </p>
+            </div>
+            <div class="hospital">
+                <h2>Sri Mullapudi Venkata Ramanamma Hospital</h2>
+                <img src="mullapudi.jpg" alt="">
+                <p>
+                    <b>Address :</b>
+                    Near Bhashyam public school,Mullapudi Venkatarayapuram,<br>tanuku-534211,Andhra Pradesh
+                </p>
+            </div>
+            <div class="hospital">
+                <h2>Sai Swetha super speciality Hospital</h2>
+                <img src="saiswetha.webp" alt="">
+                <p>
+                    <b>Address :</b>
+                    Door number 16-18-2,Opposite D 2 Electrical substation & Womens college,<br>Peravali Y junction,<br>Tanuku - 534211,<br>Andhra pradesh
+                </p>
+            </div>
+            <div class="hospital">
+                <h2>Sudha Hospital</h2>
+                <img src="sudha.jpg" alt="sudha hospital">
+                <p>
+                    <b>Address :</b>
+                    No 21-1-4, society Road, Opp Co-Operative Stores , <br>Tanuku , Andhra pradesh 534211
+                </p>
+            </div>
+            <div class="hospital">
+                <h2>Priyanka Nursing Home</h2>
+                <img src="priyanka.jpg" alt="">
+                <p>
+                    <b>Address :</b>
+                    Rashtrapati Road Opp Co-Axial office sajjrpuram <br>Tanuku, Andhra pradesh 534211
+                </p>
+            </div>
+        </div>
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>

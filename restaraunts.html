@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>seek coding</title>
+    <link rel="stylesheet" href="style1.css">
+    <!---we had linked our css file----->
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div>
+                <a href='website.html'>TANUKU CITY</a>
+            </div>
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='vinayp.html'>HOME</a></li>
+                    <li><a href='ABOUT.html'>ABOUT</a></li>
+                    <li><a href='hospitals.html'>HOSPITALS</a></li>
+                    <li><a href='restaraunts.html'>RESTAURANTS</a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</button></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <h1 style="font-size: 40px"> RESTAURANTS</h1>
+        </section>
+        <div class="restaurents">
+            <div class="restaurant">
+                <h2>Alankar Family Restaurant</h2>
+                <img src="alankar.jpg" alt="">
+                <p>
+                    <b>Address :</b>
+                    Opposite Arts college <br> Venkataraya puram, Tanuku <br> Andhra Pradesh 534211
+                </p>
+            </div>
+            <div class="restaurant">
+                <h2>Sri chitturi Heritage</h2>
+                <img src="chitturi.jpg" alt="">
+                <p>
+                    <b>Address :</b>
+                    Door 8-18-5-22 near reliance fresh <br> Rashtrapathi Road <br>Tanuku, Andhra PRadesh 534211
+                </p>
+            </div>
+            <div class="restaurant">
+                <h2>JK Restaurant</h2>
+                <img src="jk.jpg" alt="">
+                <p><b>Address :</b>
+                Government Hospital Sai Residence , <br> Opp Rashtrapathi Road <br> Tanuku, Andra pradesh 534211
+               </p>
+            </div>
+            <div class="restaurant">
+                <h2>Sangeeth restaurant</h2>
+                <img src="sangheetha.jpg" alt="">
+                <p>
+                    <b>Address :</b>
+                    Ammanna Plaza DVS complex velpur road <br> Venkatarayapuram , Tanuku, <br>Andhra Pradesh 534211
+                </p>
+            </div>
+            <div class="restaurant">
+                <h2>Hungry Harbour</h2>
+                <img src="hh.jpg" alt="">
+                <p>
+                    <b>Address :</b>
+                    Drivers Colony, near gouthami factory, <br>Tetali, Tanuku <br> Andhra Pradesh 534211
+                </p>
+            </div>
+        </div>
+
+
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and                                                   conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
